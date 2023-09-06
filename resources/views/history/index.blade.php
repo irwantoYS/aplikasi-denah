@@ -85,6 +85,22 @@
             <img src="{{ asset('img/LandscapeGroup16.png') }}" class="w-full h-auto"  alt="">
             <button id="LEMARI 1" class="freezer-btn absolute top-[4px] right-[711px] bg-blue-400 text-xs p-1">L.A.1</button>
             <button id="LEMARI 2" class="freezer-btn absolute top-[4px] right-[665px] bg-blue-400 text-xs p-1">L.A.2</button>
+            <button id="LEMARI 3" class="freezer-btn absolute top-[4px] right-[620px] bg-blue-400 text-xs p-1">L.A.3</button>
+            <button id="LEMARI 4" class="freezer-btn absolute top-[4px] right-[530px] bg-blue-400 text-xs p-1">L.A.4</button>
+            <button id="LEMARI 5" class="freezer-btn absolute top-[4px] right-[489px] bg-blue-400 text-xs p-1">L.A.5</button>
+            <button id="LEMARI 6" class="freezer-btn absolute top-[4px] right-[448px] bg-blue-400 text-xs p-1">L.A.6</button>
+            <button id="LEMARI 7" class="freezer-btn absolute top-[4px] right-[406px] bg-blue-400 text-xs p-1">L.A.7</button>
+            <button id="NDF11" class="freezer-btn absolute top-[93px] right-[668px] bg-blue-400 text-xs p-1.5">DF.A.1</button>
+            <button id="NDF9" class="freezer-btn absolute top-[93px] right-[616px] bg-blue-400 text-xs p-1.5">DF.A.2</button>
+            <button id="NDF8" class="freezer-btn absolute top-[93px] right-[539px] bg-blue-400 text-xs p-1.5">DF.A.3</button>
+            <button id="NDF29" class="freezer-btn absolute top-[93px] right-[487px] bg-blue-400 text-xs p-1.5">DF.A.4</button>
+            <button id="NDF28" class="freezer-btn absolute top-[93px] right-[435px] bg-blue-400 text-xs p-1.5">DF.A.5</button>
+            <button id="NDF19" class="freezer-btn absolute top-[145px] right-[280px] bg-blue-400 text-xs p-1.5">DF.D.1</button>
+            <button id="NDF20" class="freezer-btn absolute top-[145px] right-[228px] bg-blue-400 text-xs p-1.5">DF.D.2</button>
+            <button id="NDF21" class="freezer-btn absolute top-[145px] right-[176px] bg-blue-400 text-xs p-1.5">DF.D.3</button>
+            <button id="NDF22" class="freezer-btn absolute top-[145px] right-[123px] bg-blue-400 text-xs p-1.5">DF.D.4</button>
+            <button id="NDF4" class="freezer-btn absolute top-[422px] right-[852px] bg-blue-400 text-xs p-1">DF.C.1</button>
+            <button id="NDF5" class="freezer-btn absolute top-[422px] right-[808px] bg-blue-400 text-xs p-1">DF.C.2</button>
         </div>
     </div>
 
