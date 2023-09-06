@@ -24,7 +24,14 @@ class HistoryController extends Controller
         ]);
 
         if($history) {
-            return redirect()->back();
+            return redirect()->back()
+                ->with("success","Riwayat telah disimpan!");
         }
+    }
+
+    public function getData()
+    {
+        $histories = History::with('freezer')->paginate();
+        return view('history.admin-index', compact('histories'));
     }
 }

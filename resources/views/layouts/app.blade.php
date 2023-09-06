@@ -32,5 +32,10 @@
                 </main>
             </div>
         </div>
+        <!-- FlowBite -->
+        <script src="{{ asset('js/flowbite.min.js') }}"></script>
+        @if (isset($scripts))
+            {{ $scripts }}
+        @endif
     </body>
 </html>
