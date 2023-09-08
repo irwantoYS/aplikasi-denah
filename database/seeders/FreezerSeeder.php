@@ -26,7 +26,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	025.11.0199.416160.000.KP 2020  3 .08 .01 .41 .024 . 5	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1j7vtdU8M77g5wzVDt7SbBpKXn9AQ0Nth?usp=drive_link	'
+                'picture'=>''
             ),
             1   => array(
                 'id' =>	2	, 
@@ -41,7 +41,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	025.11.0199.416160.000.KP 2020  3 .08 .01 .41 .024 . 4	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1WQScnD7i8NJYczWiBjO7cSvd-HI5McFU?usp=drive_link	'
+                'picture'=>''
             ),
             2   => array(
                 'id' =>	3	, 
@@ -56,7 +56,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	025.11.0199.416160.000.KP 2020  3 .08 .01 .41 .024 . 6	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1n53s7oWCCE8PxQcbbRqq8VjkeIQlfYG6?usp=drive_link	'
+                'picture'=>''
             ),
             3   => array(
                 'id' =>	4	, 
@@ -86,7 +86,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020 3 .08 .01 .13. 023 . 95	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1_wfpjNOb-XKPIC6zcl6gK1vfZAYVGVSk?usp=drive_link	'
+                'picture'=>''
             ),
             5   => array(
                 'id' =>	6	, 
@@ -101,7 +101,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020 3 .08 .01 .13. 023 . 96	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1GDehHAcqMriT09wkQbgZ0QKye55-pn1d?usp=drive_link	'
+                'picture'=>''
             ),
             6   => array(
                 'id' =>	7	, 
@@ -116,7 +116,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2008 3 .08 .01 .13. 023 . 30	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1FmD43tQ68LT2KBuS4A7WkZ7Ra-AqWrmR?usp=drive_link	'
+                'picture'=>''
             ),
             7   => array(
                 'id' =>	8	, 
@@ -131,7 +131,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2008 3 .08 .01 .13. 023 . 26	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1YVRJmWTPPDgui1k90GsXbLH7sTplQmSz?usp=drive_link	'
+                'picture'=>''
             ),
             8   => array(
                 'id' =>	9	, 
@@ -146,7 +146,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2008 3 .08 .01 .13. 023 . 29	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1wDJO5vf1PVuECSuVUHaY1OjAvA6cXktI?usp=drive_link	'
+                'picture'=>''
             ),
             9   => array(
                 'id' =>	10	, 
@@ -161,7 +161,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020  3 .08 .01 .13 . 90	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1SqZ3UykPuZXzjmLjMLyyIThet092C__3?usp=drive_link	'
+                'picture'=>''
             ),
             10  => array(
                 'id' =>	11	, 
@@ -176,7 +176,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020  3 .08 .01 .13 . 92	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/14ggZJniw4Djzf0Atce-oBMiOsQ2kU7k7?usp=drive_link	'
+                'picture'=>''
             ),
             11  => array(
                 'id' =>	12	, 
@@ -191,7 +191,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020  3 .08 .01 .13 . 91	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1iNr0nYypwsHplMC7qSqBjys0vn4cqAd9?usp=drive_link	'
+                'picture'=>''
             ),
             12  => array(
                 'id' =>	13	, 
@@ -206,7 +206,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020  3 .08 .01 .13 . 93	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/19SeuL_ikp2bz_g5N_ZXgrEaBukyNYcT2?usp=drive_link	'
+                'picture'=>''
             ),
             13  => array(
                 'id' =>	14	, 
@@ -221,7 +221,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	no seri 1005-9174-0113	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1JYxGEM4ENmDDuECToFIrUxXN-5TO_Jsy?usp=drive_link	'
+                'picture'=>''
             ),
             14  => array(
                 'id' =>	15	, 
@@ -236,7 +236,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2012  3 .08 .01 .13 .023 . 32	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1hnzCZ8Xi6y4TC0x_isTzuhuuwQ4ra3ZC?usp=drive_link	'
+                'picture'=>''
             ),
             15  => array(
                 'id' =>	16	, 
@@ -251,7 +251,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2020 3 .08 .01 .13 .023. 94	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1HKEB8lauKq0Dy9mvLtliXgoCI4978f92?usp=drive_link	'
+                'picture'=>''
             ),
             16  => array(
                 'id' =>	17	, 
@@ -266,7 +266,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 3 .08 .01 .13. 023 . 25	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/folders/1LqTIvitkJR7nBKbDhNl8iv6nDEsIkJEE?usp=drive_link	'
+                'picture'=>''
             ),
             17  => array(
                 'id' =>	18	, 
@@ -341,7 +341,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2015 3. 08. 01. 55. 007. 19	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/file/d/1B2zDUbptdQKT-ZsgjmZA4nbW3K60g3nK/view?usp=drive_link	'
+                'picture'=>''
             ),
             22  => array(
                 'id' =>	23	, 
@@ -356,7 +356,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2015 3. 08. 01. 55. 007. 20	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/file/d/1AxNTS_1wAIPIpbez3LZ_HCzq41YiSB2w/view?usp=drive_link	'
+                'picture'=>''
             ),
             23  => array(
                 'id' =>	24	, 
@@ -371,7 +371,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	024.11.0199.416160.000.KP 2015 3. 08. 01. 55. 007. 21	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/file/d/1AuSKqB9sCuS_ToHDqHJ4nuCv6Kr7tgPM/view?usp=drive_link	'
+                'picture'=>''
             ),
             24  => array(
                 'id' =>	25	, 
@@ -386,7 +386,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1YLuU8hf0DWkLqY-Pd9cf6gxfcvR1Y0w8	'
+                'picture'=>''
             ),
             25  => array(
                 'id' =>	26	, 
@@ -401,7 +401,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1FpmDTeNYVRcu2Cc7YWoc9rUQyYSieZx6	'
+                'picture'=>''
             ),
             26  => array(
                 'id' =>	27	, 
@@ -416,7 +416,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1SHEi_BUERXoV2j2MsXzIHBGd0EYE8RQS	'
+                'picture'=>''
             ),
             27  => array(
                 'id' =>	28	, 
@@ -431,7 +431,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1gFK-yT-ZjBiKT4Ysd3lPOj45fhY4s1vO	'
+                'picture'=>''
             ),
             28  => array(
                 'id' =>	29	, 
@@ -446,7 +446,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1k7qiPWuHxvrqohn4nV3Nq7wTjgwN3Ceb	'
+                'picture'=>''
             ),
             29  => array(
                 'id' =>	30	, 
@@ -461,7 +461,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/13R3zl7OoyVg8E3mOXwbHmkp073X74dYO	'
+                'picture'=>''
             ),
             30  => array(
                 'id' =>	31	, 
@@ -476,7 +476,7 @@ class FreezerSeeder extends Seeder
                 'bmn'=>'	UNKNOWN	',
                 'location'=>'	BIOREPOSITORY	',
                 'status'=>'	AKTIF	',
-                'picture'=>'	https://drive.google.com/drive/u/0/folders/1-PU1dwbPazL7jOwtEkaQiTlehrk5ICpD	'
+                'picture'=>''
             ),
             31  => array(
                 'id' =>	32	, 

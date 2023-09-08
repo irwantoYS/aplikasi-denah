@@ -24,13 +24,14 @@ Route::controller(HistoryController::class)->as('histories.')->group(function(){
 });
 
 Route::controller(FreezerController::class)->as('freezers.')->group(function(){
+    Route::get('freezer', 'index')->middleware(['auth'])->name('index');
+    Route::post('freezer', 'update')->middleware(['auth'])->name('update');
     Route::get('data-freezer/{code}', 'getData')->name('getData');
-    // Route::post('/  ', 'store')->name('store');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 
 Route::middleware('auth')->group(function () {

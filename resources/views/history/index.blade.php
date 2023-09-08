@@ -159,7 +159,8 @@
                     </button>
                 </div>
                 <div class="flex justify-between gap-5">
-                    <img id="freezer_picture" src="{{ asset('img/sample.jpeg') }}" class="w-1/3 h-auto" alt="">
+                    <div class="w-1/3 aspect-[9/16]" id="freezer_picture">
+                    </div>
                     <div class="w-2/3">
                         <table class="w-full text-sm text-left text-gray-600">
                             <tbody class="w-full">
@@ -233,6 +234,13 @@
                                     <td class="px-2 py-1 align-baseline">:</td>
                                     <td id="freezer_location" class="px-2 py-1 align-baseline"></td>
                                 </tr>
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="px-2 py-1 align-baseline font-medium text-gray-900 whitespace-nowrap">
+                                        Keterangan
+                                    </th>
+                                    <td class="px-2 py-1 align-baseline">:</td>
+                                    <td id="freezer_status" class="px-2 py-1 align-baseline"></td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="flex justify-end mt-4">
@@ -267,8 +275,17 @@
                         $("#freezer_calibration_time").text(response.calibration_time);
                         $("#freezer_BMN").text(response.bmn);
                         $("#freezer_location").text(response.location);
+                        $("#freezer_status").text(response.status);
                         $("#select-freezer-btn").attr('data-id', response.id);
-                        // $("#freezer_picture").attr('src', response.picture);
+                        if (response.picture) {
+                            let pictureElement = `<img src="{{ asset('storage/`+response.picture+`') }}" class="w-full h-auto">`
+                            $("#freezer_picture").html(pictureElement);
+                        } else {
+                            let pictureElement = `<div class="w-full aspect-[9/16] rounded bg-gray-200 flex flex-col justify-center">
+                                <p class="block w-full text-center text-sm font-medium text-gray-600">Belum ada gambar</p>
+                            </div>`;
+                            $("#freezer_picture").html(pictureElement);
+                        }
                         
                         
                         $("#freezerDetailModal").removeClass('hidden');
@@ -288,8 +305,9 @@
                 $("#freezer_calibration_time").text('');
                 $("#freezer_BMN").text('');
                 $("#freezer_location").text('');
+                $("#freezer_status").text('');
                 $("#select-freezer-btn").attr('data-id', '');
-                // $("#freezer_picture").attr('src', '');
+                $("#freezer_picture").html('');
                 
                 $("#freezerDetailModal").addClass('hidden');
             });
