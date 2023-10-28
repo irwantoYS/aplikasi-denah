@@ -8,7 +8,7 @@ use App\Models\History;
 
 class HistoryController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $freezers = Freezer::get();
         return view('history.index', compact('freezers'));
@@ -29,8 +29,14 @@ class HistoryController extends Controller
         }
     }
 
+    public function adminindex(Request $request)
+    {
+        $histories = History::get();
+        return view('history.admin-index', compact('histories','request'));
+    }
     public function getData()
     {
+       
         $histories = History::with('freezer')->paginate();
         return view('history.admin-index', compact('histories'));
     }

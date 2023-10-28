@@ -4,7 +4,9 @@ use App\Http\Controllers\FreezerController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,11 +19,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$currentTime = Carbon::now();
+
 Route::controller(HistoryController::class)->as('histories.')->group(function(){
     Route::get('/', 'index')->name('index');
     Route::post('/', 'store')->name('store');
     Route::get('/pendataan', 'getData')->name('getData');
+    
 });
+Route::get('/admin/history', [AdminController::class, 'index'])->name('cari');
 
 Route::controller(FreezerController::class)->as('freezers.')->group(function(){
     Route::get('freezer', 'index')->middleware(['auth'])->name('index');

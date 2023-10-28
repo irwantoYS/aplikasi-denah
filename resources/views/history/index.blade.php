@@ -28,6 +28,7 @@
         </div>
     @endif
     <div class="w-full h-screen bg-gray-200 p-6 flex items-center justify-between">
+
         <div class="p-6 w-1/4 bg-white shadow-md rounded-md ">
             <form action="{{ route('histories.store') }}" method="post">
                 @csrf
@@ -52,17 +53,31 @@
                         <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
                     @enderror
                 </div>
-        
+
                 <!-- Datetime -->
                 <div class="mb-4">
                     <label for="datetime" class="block mb-2 text-base font-medium text-gray-900">{{ __('Waktu dan Tanggal') }}</label>
-                    <input type="datetime-local" id="datetime" name="datetime" value="{{ old('datetime') }}"
-                        class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder" 
-                        autocomplete="off" placeholder="Waktu dan Tanggal">
+                    <input type="datetime-local" id="datetime" name="datetime" class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder" autocomplete="off" placeholder="Waktu dan Tanggal" disabled>
                     @error('datetime')
                         <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
                     @enderror
                 </div>
+
+                <script>
+                    // Get the current date and time as a string in the format required by datetime-local input.
+                    function getCurrentDateTime() {
+                        const now = new Date();
+                        const year = now.getFullYear();
+                        const month = (now.getMonth() + 1).toString().padStart(2, '0');
+                        const day = now.getDate().toString().padStart(2, '0');
+                        const hours = now.getHours().toString().padStart(2, '0');
+                        const minutes = now.getMinutes().toString().padStart(2, '0');
+                        return `${year}-${month}-${day}T${hours}:${minutes}`;
+                    }
+                
+                    // Set the default value to the current date and time.
+                    document.getElementById('datetime').value = getCurrentDateTime();
+                </script>
         
                 <!-- Freezer -->
                 <div class="mb-4">
@@ -255,6 +270,7 @@
     <script src="{{ asset('js/flowbite.min.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+
 
         $(document).ready(function () {
             $(".freezer-btn").click(function (e) { 

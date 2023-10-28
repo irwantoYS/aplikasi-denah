@@ -55,6 +55,11 @@
             <x-primary-button class="w-full">
                 {{ __('Log in') }}
             </x-primary-button>
+
+            
+            <a class="mt-4 text-sm text-gray-600 underline hover:text-gray-900" href="{{ route('register') }}">
+                {{ __('Dont Have Account?') }}
+
         </div>
 
     </form>
