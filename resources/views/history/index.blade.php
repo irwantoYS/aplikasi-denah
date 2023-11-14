@@ -57,11 +57,12 @@
                 <!-- Datetime -->
                 <div class="mb-4">
                     <label for="datetime" class="block mb-2 text-base font-medium text-gray-900">{{ __('Waktu dan Tanggal') }}</label>
-                    <input type="datetime-local" id="datetime" name="datetime" class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder" autocomplete="off" placeholder="Waktu dan Tanggal" disabled>
+                    <input type="datetime-local" id="datetime" name="datetime" class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder" autocomplete="off" placeholder="Waktu dan Tanggal" disabled value="{{ now()->format('Y-m-d\TH:i') }}">
                     @error('datetime')
                         <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
                     @enderror
                 </div>
+
 
                 <script>
                     // Get the current date and time as a string in the format required by datetime-local input.
