@@ -18,14 +18,14 @@ class HistoryController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name'          => 'required|alpha',
+            'name'          => 'required|string',
             'employee_id'   => 'required',
             'datetime'      => 'required',
             'freezer_id'    => 'required',
             'purpose'       => 'required',
         ], [
             'name.required' => 'Kolom nama harus diisi.',
-            'name.alpha'    => 'Kolom nama hanya boleh berisi huruf.',
+            'name.string'    => 'Kolom nama hanya boleh berisi huruf.',
             'employee_id.required' => 'Kolom ID karyawan harus diisi.',
             'datetime.required'    => 'Kolom datetime harus diisi.',
             'freezer_id.required'  => 'Kolom freezer ID harus diisi.',
@@ -63,7 +63,7 @@ class HistoryController extends Controller
     public function getData()
     {
        
-        $histories = History::with('freezer')->orderBy('created_at', 'desc')->paginate();
+        $histories = History::with('freezer')->orderBy('created_at', 'desc')->paginate(10);
         return view('history.admin-index', compact('histories'));
     }
 }

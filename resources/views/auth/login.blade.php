@@ -1,7 +1,5 @@
 <x-guest-layout>
-    <a href="/" class="flex justify-center items-center">
-        <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-    </a>
+    
 
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -32,12 +30,7 @@
                 </label>
             </div>
 
-            <div>
-                @if (Route::has('password.request'))
-                    <a class="block text-sm fontme text-indigo-700 hover:underline"
-                        href="{{ route('password.request') }}">{{ __('Forgot your password?') }}</a>
-                @endif
-            </div>
+            
         </div>
 
         <div class="mt-6">
