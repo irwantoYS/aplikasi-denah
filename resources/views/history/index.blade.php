@@ -50,7 +50,7 @@
                         class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder"
                         autocomplete="off" placeholder="Nama">
                     @error('name')
-                        <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
+                        <p class="block mt-1 text-xs font-medium text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -62,7 +62,7 @@
                         class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder"
                         autocomplete="off" placeholder="Nomor Pegawai">
                     @error('employee_id')
-                        <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
+                        <p class="block mt-1 text-xs font-medium text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -75,7 +75,7 @@
                         autocomplete="off" placeholder="Waktu dan Tanggal" value="{{ now()->format('Y-m-d\TH:i') }}"
                         readonly>
                     @error('datetime')
-                        <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
+                        <p class="block mt-1 text-xs font-medium text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -110,7 +110,7 @@
                         @endforeach
                     </select>
                     @error('unit_id')
-                        <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
+                        <p class="block mt-1 text-xs font-medium text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
 
@@ -122,7 +122,7 @@
                         class="border-2 border-primary-20 text-primary-50 text-sm rounded-md focus:ring-primary-70 focus:border-primary-70 block w-full p-2.5 custom-placeholder"
                         autocomplete="off" placeholder="Tujuan">
                     @error('purpose')
-                        <p class="block mt-1 text-xs font-medium text-danger">{{ $message }}</p>
+                        <p class="block mt-1 text-xs font-medium text-red-500">{{ $message }}</p>
                     @enderror
                 </div>
 
