@@ -4,8 +4,6 @@
      class="fixed z-30 inset-y-0 left-0 w-64 transition duration-300 transform bg-gray-900 overflow-y-auto lg:translate-x-0 lg:static lg:inset-0">
     <div class="flex items-center justify-center mt-8">
         <div class="flex items-center">
-           
-
             <span class="text-white text-2xl mx-2 font-semibold">{{ __('Freezers') }}</span>
         </div>
     </div>
@@ -29,5 +27,13 @@
             </x-slot>
             Pendataan
         </x-nav-link>
+
+        <x-nav-link href="{{ route('spesimen.index') }}" :active="request()->routeIs('spesimen.index')">
+        <!-- Tambahkan tautan ke halaman formulir spesimen -->
+        <x-slot name="icon">
+            <!-- Icon yang sesuai -->
+        </x-slot>
+        Penerimaan Spesimen
+    </x-nav-link>
     </nav>
 </div>

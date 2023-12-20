@@ -5,19 +5,20 @@ use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SpesimenController;
 use Illuminate\Support\Facades\Route;
 use Carbon\Carbon;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+// Menampilkan Halaman Formulir
+Route::get('/spesimen', [SpesimenController::class, 'index'])->name('spesimen.index');
+Route::get('/spesimen/create', [SpesimenController::class, 'create'])->name('spesimen.create');
+Route::post('/spesimen-store', [SpesimenController::class, 'store'])->name('spesimen.store');
+Route::delete('/spesimen/{id}', [SpesimenController::class, 'destroy'])->name('spesimen.destroy');
+Route::get('/spesimen/{spesimen}', [SpesimenController::class, 'show'])->name('spesimen.show');
+Route::get('/spesimen/{id}/edit', [SpesimenController::class, 'edit'])->name('spesimen.edit');
+
+Route::put('/spesimen/{id}', [SpesimenController::class, 'update'])->name('spesimen.update');
+Route::resource('spesimen', SpesimenController::class);
 
 $currentTime = Carbon::now();
 
